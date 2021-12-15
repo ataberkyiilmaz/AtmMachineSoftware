@@ -1,6 +1,6 @@
 package atmMachine1;
 
-public class Account {
+public class Account implements IDatabase {
 
 	private int balance;
 	private String type;
@@ -31,6 +31,13 @@ public class Account {
 		this.balance = balance;
 		this.type = type;
 		this.owners = owners;
+	}
+	
+	
+	@Override
+	public void log() {
+		System.out.println("Account logged..");
+		
 	}
 	
 	
