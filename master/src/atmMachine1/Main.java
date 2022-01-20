@@ -7,6 +7,8 @@ public class Main {
 		Account account = new Account(0, null, null);
 		account.log();
 		
+		System.out.println("Welcome, what would you like to do?");
+		
 	}
 
 }
